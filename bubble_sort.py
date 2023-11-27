@@ -2,9 +2,9 @@ import time
 import random
 
 caso1_range = 500
-caso2_range = 20
+caso2_range = 1000
 caso3_range = 10000
-ejecuciones = 1
+ejecuciones = 100
 
 # algoritmo de ordenamiento
 def bubble_sort(lista):
