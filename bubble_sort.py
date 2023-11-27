@@ -50,7 +50,7 @@ def exec(l):
 # mensaje de salida una vez que se terminaron todas las ejecuciones
 def message(n,rango,tt):
     print('Despues de {} ejecucion(es) de ordenamiento para el caso {} con un conjunto de {} datos, el tiempo promedio fue de:'.format(ejecuciones,n,rango))
-    print(tt/ejecuciones)
+    print('{:f}'.format(tt/ejecuciones))
 
 # punto de entrada de los casos
 def caso(n):
@@ -73,5 +73,5 @@ def caso(n):
 #bubble_sort(l)
 
 #caso(1)
-#caso(2)
-caso(3)
+caso(2)
+#caso(3)
