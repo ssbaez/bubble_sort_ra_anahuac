@@ -2,9 +2,9 @@ import time
 import random
 
 caso1_range = 500
-caso2_range = 1000
+caso2_range = 20
 caso3_range = 10000
-ejecuciones = 100
+ejecuciones = 1
 
 # algoritmo de ordenamiento
 def bubble_sort(lista):
@@ -13,9 +13,7 @@ def bubble_sort(lista):
     for i in range(long):
         for j in range(long-i-1):
             if lista[j] > lista[j+1]:
-                temp = lista[j]
-                lista[j] = lista[j+1]
-                lista[j+1] = temp
+                (lista[j],lista[j+1]) = (lista[j+1],lista[j])
     fin = time.time()
     return fin - inicio
 
@@ -69,9 +67,10 @@ def caso(n):
         tt = exec(l)
         message(n,caso3_range,tt)
 
-# mkSet(caso1_range)
-# mkSet(caso2_range)
-# mkSet(caso3_range)
+#l = mkSet(caso2_range)
+#l = mkSet(caso2_range)
+#l = mkSet(caso3_range)
+#bubble_sort(l)
 
 #caso(1)
 #caso(2)
